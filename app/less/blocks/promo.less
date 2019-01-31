@@ -1,6 +1,6 @@
 .promo {
   margin-top: 40px;
-  background-image: url('../../img/promo-image@1x.png');
+  background-image: url('../../img/promo-image.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 320px auto;
@@ -84,13 +84,92 @@
 
 @media (min-width: 768px) {
   .promo {
-    width: 768px;
-    margin: 0 auto;
+    .tablet-width();
     min-height: 400px;
     margin-top: 40px;
-    background-image: url('../../img/promo-image@1x.png');
+    background-image: url('../../img/promo-image.png');
     background-repeat: no-repeat;
     background-position: -150px top;
     background-size: 890px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/promo-image@2x.png");
+    }
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("img/promo-image@2x.png");
+    background-size: 1174px auto;
+  }
+}
+
+@media (min-width: 1170px) {
+  .promo {
+    .desktop-width();
+    height: 455px;
+    padding-top: 40px;
+    background-image: url('../img/promo-image.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1174px auto;
+  }
+
+  .promo__wrapper {
+    width: 370px;
+    margin-top: 0px;
+    padding-top: 15px;
+  }
+
+  .promo__caption {
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 0px;
+    margin-left: -2px;
+  }
+
+  .promo__span-text {
+    font-size: 32px;
+    font-family: "Montserrat-Regular", "Arial", "Verdana", sans-serif;
+    padding-right: 150px;
+  }
+
+  .promo__description {
+    margin: 0;
+    padding-top: 15px;
+    font-size: 18px;
+  }
+
+  .promo-social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    .set-list(0, 0, none);
+    margin-top: 30px;
+    margin-bottom: 38px;
+  }
+
+  .promo-social__resume-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 385px;
+  }
+
+  .promo-social__link-hireme {
+    display: block;
+    width: 170px;
+    height: 50px;
+    padding: 17px;
+    font-size: 18px;
+  }
+
+  .promo-social__link-resume {
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding: 17px;
+    font-size: 18px;
   }
 }

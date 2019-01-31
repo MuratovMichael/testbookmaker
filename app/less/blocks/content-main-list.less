@@ -10,7 +10,7 @@
   width: 270px;
   height: 330px;
   margin-bottom: 60px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid @border-color-items;
   box-shadow: 0 0 10px @shadow-color;
 }
@@ -22,8 +22,8 @@
 .content-main-list__image {
   width: 270px;
   height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .content__description-block {
@@ -57,6 +57,24 @@
   padding-top: 10px;
 }
 
+.content-main-list__link-show {
+  display: block;
+  color: @main-color;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  margin-bottom: 60px;
+}
+
+.content-main-list__link-show:hover {
+  color: @dark-gray;
+  transition-duration: 0.5s;
+}
+
+.content-main-list__link-show:active {
+  color: @light-gray;
+  transition-duration: 0.5s;
+}
+
 @media (min-width: 768px) {
   .content-main-list {
     display: flex;
@@ -70,9 +88,73 @@
   .content-main-list__item {
     width: 270px;
     height: 330px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border-radius: 8px;
     border: 1px solid @border-color-items;
     box-shadow: 0 0 10px @shadow-color;
+  }
+}
+
+@media (min-width: 1170px) {
+  .content-main-list {
+    .desktop-width();
+    .set-list(0, 33px auto 0 auto, none);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .content-main-list__item {
+    width: 370px;
+    height: 370px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    border: 1px solid @border-color-items;
+    box-shadow: 0 0 10px @shadow-color;
+  }
+
+  .content-main-list__image {
+    width: 370px;
+    height: 300px;
+  }
+
+  .content__description-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    box-sizing: border-box;
+  }
+
+  .content-main-list__name-category {
+    padding-right: 160px;
+    margin: 0;
+    font-size: 12px;
+    font-family: "Montserrat-Regular", "Arial", "Verdana", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .content-main-list__description {
+    flex-grow: 0;
+    padding-right: 175px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold", "Arial", "Verdana", sans-serif;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .content-main-list__year {
+    font-size: 16px;
+    font-family: "Montserrat-Bold", "Arial", "Verdana", sans-serif;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .content-main-list__link-show {
+    color: @main-color;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 28px;
   }
 }
