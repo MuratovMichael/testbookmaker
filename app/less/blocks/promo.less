@@ -1,0 +1,96 @@
+.promo {
+  margin-top: 40px;
+  background-image: url('../../img/promo-image@1x.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px auto;
+}
+
+.promo__wrapper {
+  width: 290px;
+}
+
+.promo__caption {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.promo__span-text {
+  font-size: 18px;
+  font-family: "Montserrat-Regular", "Arial", "Verdana", sans-serif;
+  padding-right: 150px;
+}
+
+.promo__description {
+  margin: 0;
+}
+
+.promo-social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  .set-list(0, 0, none);
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.promo-social__resume-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.promo-social__link-hireme {
+  display: block;
+  width: 120px;
+  height: 36px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat-Regular", "Arial", "Verdana", sans-serif;
+  text-transform: uppercase;
+  color: @dark-gray;
+  border-radius: 40px;
+  border: 1px solid @dark-gray;
+  transition-duration: 0.5s;
+}
+
+.promo-social__link-resume {
+  display: block;
+  width: 150px;
+  height: 36px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat-Regular", "Arial", "Verdana", sans-serif;
+  text-transform: uppercase;
+  color: @dark-gray;
+  border-radius: 40px;
+  border: 1px solid @dark-gray;
+  transition-duration: 0.5s;
+}
+
+.promo-social__link-resume:hover,
+.promo-social__link-hireme:hover {
+  background-color: @main-color;
+  color: @white-color;
+  transition-duration: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 400px;
+    margin-top: 40px;
+    background-image: url('../../img/promo-image@1x.png');
+    background-repeat: no-repeat;
+    background-position: -150px top;
+    background-size: 890px auto;
+  }
+}

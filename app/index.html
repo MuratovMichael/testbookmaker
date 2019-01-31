@@ -10,167 +10,209 @@
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo-img" src="img/logo.png" alt="Логотип">
-      </a>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Work</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">About me</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Blog</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Contact</a>
-          </li>
-          <li class="site-list__link" class="site-list__item">
-            <button class="site-list__button" href="#">Hire me</button>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__flex-wrapper">
+        <a class="page-header__logo-link" href="#">
+          <picture class="page-header__picture">
+            <source class="page-header__source" media="(min-width: 1170px)" srcset="img/logo-desktop.png">
+            <source class="page-header__source" media="(min-width: 768px)" srcset="img/logo-tablet.png">
+            <img class="page-header__logo-mobile" src="img/logo-mobile.png" alt="Логотип">
+          </picture>
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__button">
+            <img class="main-navigation__image" src="img/burger-icon.png" alt="Кнопка меню">
+          </button>
+          <ul class="main-navigation__list site-list site-list--hidden">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--border-bottom" href="#">Work</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--border-bottom" href="#">About me</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--border-bottom" href="#">Blog</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--border-bottom" href="#">Contact</a>
+            </li>
+            <li class="site-list__link" class="site-list__item">
+              <button class="site-list__button" href="#">Hire me</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="promo">
-        <h1 class="promo__caption">Hello, I,m Lewis Nathaniel</h1>
-        <p class="promo__description">UI & UX Designer</p>
-        <ul class="promo-social__list">
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="Be"></a>
-          </li>
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="SocialBasket"></a>
-          </li>
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="Инстаграмм"></a>
-          </li>
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="Фейсбук"></a>
-          </li>
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="Инстаграмм"></a>
-          </li>
-          <li class="promo-social__item">
-            <a class="promo-social__link" href="#" title="Твиттер"></a>
-          </li>
-        </ul>
-        <div class="promo-social__resume-buttons">
-          <a class="promo-social__link" href="#">Hire me</a>
-          <a class="promo-social__link" href="#">See my resume</a>
-        </div>
+        <div class="promo__wrapper">
+          <h1 class="promo__caption"><span class="promo__span-text">Hello, I,m</span> Lewis Nathaniel</h1>
+          <p class="promo__description">UI & UX Designer</p>
+          <ul class="promo-social__list">
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="Be">
+                <img class="promo-social__icon" src="img/be.png" alt="Be">
+              </a>
+            </li>
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="dribbble">
+                <img class="promo-social__icon" src="img/dribbble.png" alt="dribbble">
+              </a>
+            </li>
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="Ин">
+                <img class="promo-social__icon" src="img/in.png" alt="Ин">
+              </a>
+            </li>
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="Фейсбук">
+                <img class="promo-social__icon" src="img/fb.png" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="Инстаграмм">
+                <img class="promo-social__icon" src="img/instagram.png" alt="Инстаграмм">
+              </a>
+            </li>
+            <li class="promo-social__item">
+              <a class="promo-social__link" href="#" title="Твиттер">
+                <img class="promo-social__icon" src="img/twitter.png" alt="Твиттер">
+              </a>
+            </li>
+          </ul>
+          <div class="promo-social__resume-buttons">
+            <a class="promo-social__link-hireme" href="#">Hire me</a>
+            <a class="promo-social__link-resume" href="#">See my resume</a>
+          </div>
       </div>
     </div>
   </header>
   <main class="content-wrapper">
     <section class="content">
-      <ul class="content__list">
-        <li class="content__item">
-          <a class="content__link" href="#">All</a>
-        </li>
-        <li class="content__item">
-          <a class="content__link" href="#">App</a>
-        </li>
-        <li class="content__item">
-          <a class="content__link" href="#">Website</a>
-        </li>
-        <li class="content__item">
-          <a class="content__link" href="#">Interaction</a>
-        </li>
-      </ul>
-      <ul class="content-main-list">
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-        <li class="content-main-list__item">
-          <picture class="content-main-list__picture">
-            <source class="content-main-list__source" media="(min-width: 1300px)" srcset="">
-            <source class="content-main-list__source" media="(min-width: 768px)" srcset="">
-            <img class="content-main-list__image" srcset="" alt="Проект 1">
-          </picture>
-          <h2 class="content-main-list__name-category">Category</h2>
-          <h3 class="content-main-list__description">Project title</h3>
-          <p class="content-main-list__year">2018</p>
-        </li>
-      </ul>
-      <a class="content__more-work-link" href="#">Load more work</a>
+      <div class="content__container">
+        <ul class="content__list">
+          <li class="content__item">
+            <a class="content__link" href="#">All</a>
+          </li>
+          <li class="content__item">
+            <a class="content__link" href="#">App</a>
+          </li>
+          <li class="content__item">
+            <a class="content__link" href="#">Website</a>
+          </li>
+          <li class="content__item">
+            <a class="content__link" href="#">Interaction</a>
+          </li>
+        </ul>
+        <ul class="content-main-list">
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image1-desktop@1x.jpg 1x, img/image1-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image1-tablet.jpg 1x, img/image1-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image1-mobile@1x.jpg" srcset="img/image1-mobile@1x.jpg 2x" alt="Проект 1">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image2-desktop@1x.jpg 1x, img/image2-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image2-tablet.jpg 1x, img/image2-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image2-mobile@1x.jpg" srcset="img/image2-mobile@1x.jpg 2x" alt="Проект 2">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image3-desktop@1x.jpg 1x, img/image3-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image3-tablet.jpg 1x, img/image3-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image3-mobile@1x.jpg" srcset="img/image3-mobile@1x.jpg 2x" alt="Проект 3">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image4-desktop@1x.jpg 1x, img/image4-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image4-tablet.jpg 1x, img/image4-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image4-mobile@1x.jpg" srcset="img/image4-mobile@1x.jpg 2x" alt="Проект 4">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image5-desktop@1x.jpg 1x, img/image5-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image5-tablet.jpg 1x, img/image5-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image5-mobile@1x.jpg" srcset="img/image5-mobile@1x.jpg 2x" alt="Проект 5">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image6-desktop@1x.jpg 1x, img/image6-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image6-tablet.jpg 1x, img/image6-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image6-mobile@1x.jpg" srcset="img/image6-mobile@1x.jpg 2x" alt="Проект 6">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image7-desktop@1x.jpg 1x, img/image7-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image7-tablet.jpg 1x, img/image7-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image7-mobile@1x.jpg" srcset="img/image7-mobile@1x.jpg 2x" alt="Проект 7">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image8-desktop@1x.jpg 1x, img/image8-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image8-tablet.jpg 1x, img/image8-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image8-mobile@1x.jpg" srcset="img/image8-mobile@1x.jpg 2x" alt="Проект 8">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+          <li class="content-main-list__item">
+            <picture class="content-main-list__picture">
+              <source class="content-main-list__source" media="(min-width: 1300px)" srcset="img/image9-desktop@1x.jpg 1x, img/image9-desktop@1x.jpg 2x">
+              <source class="content-main-list__source" media="(min-width: 768px)" srcset="img/image9-tablet.jpg 1x, img/image9-tablet.jpg 2x">
+              <img class="content-main-list__image" src="img/image9-mobile@1x.jpg" srcset="img/image9-mobile@1x.jpg 2x" alt="Проект 9">
+            </picture>
+            <div class="content__description-block">
+              <h2 class="content-main-list__name-category">Category</h2>
+              <h3 class="content-main-list__description">Project title</h3>
+              <p class="content-main-list__year">2018</p>
+            </div>
+          </li>
+        </ul>
+        <a class="content__more-work-link" href="#">Load more work</a>
+      </div>
     </section>
   </main>
 </body>
